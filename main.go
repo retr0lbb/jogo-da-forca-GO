@@ -20,9 +20,10 @@ func main() {
 	errors := 0
 
 	for errors < maxErrors {
+		fmt.Println("JOGO DA FORCA SEMANA DE TI")
 		drawHangman(errors)
-		fmt.Println("Word to guess:", guessedWord)
-		fmt.Print("Guessed letters: ")
+		fmt.Println("A palavra é:", guessedWord)
+		fmt.Print("Letra adivinhada: ")
 		var letter string
 		fmt.Scan(&letter)
 
