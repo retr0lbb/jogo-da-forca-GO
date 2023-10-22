@@ -12,7 +12,7 @@ func main() {
 	sorce := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(sorce)
 
-	words := []string{"google", "semanadeti", "golang", "drive", "maps", "firebase", "grasshopper"}
+	words := []string{"google", "semanadeti", "golang", "drive", "cloud", "firebase", "grasshopper"}
 
 	wordToGuess := words[r.Intn(len(words))]
 	guessedWord := strings.Repeat("_", len(wordToGuess))
